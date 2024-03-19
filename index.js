@@ -5,6 +5,8 @@ const app = express();
 const port = 9399;
 
 // Serve static files from the 'static' directory
+console.log(`Serving from ${path.join(__dirname, 'static')}`)
+
 app.use(express.static(path.join(__dirname, 'static')));
 
 // Start the server
